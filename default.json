@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "helpers:pinGitHubActionDigests",
+    "docker:enableMajor",
+    ":dependencyDashboard",
+    ":disableRateLimiting",
+    ":disableVulnerabilityAlerts",
+    ":semanticCommits",
+    ":semanticCommitScopeDisabled"
+  ],
+  "dependencyDashboard": true,
+  "dependencyDashboardTitle": "Renovate Dashboard",
+  "prHeader": "Update Request | Renovate Bot",
+  "suppressNotifications": [
+    "prEditedNotification",
+    "prIgnoreNotification"
+  ],
+  "separateMajorMinor": true,
+  "separateMultipleMajor": true,
+  "rebaseWhen": "behind-base-branch"
+}
