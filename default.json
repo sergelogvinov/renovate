@@ -19,5 +19,12 @@
   ],
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
-  "rebaseWhen": "behind-base-branch"
+  "rebaseWhen": "behind-base-branch",
+  "registryAliases": {
+    "mirror.gcr.io": "docker.io"
+  },
+  "github-actions": {
+    "enabled": true,
+    "pinDigests": true
+  }
 }
